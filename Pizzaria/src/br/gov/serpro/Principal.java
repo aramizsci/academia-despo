@@ -5,7 +5,7 @@ public static void main(String[] args) {
 
 		
 		Carrinho carrinhoPedido1 = new Carrinho();
-		carrinhoPedido1.cliente = "Marco";
+		carrinhoPedido1.cliente = "Marcos";
 		Carrinho carrinhoPedido2 = new Carrinho();
 		carrinhoPedido2.cliente = "Antonio";
 		Carrinho carrinhoPedido3 = new Carrinho();

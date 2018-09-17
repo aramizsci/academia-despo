@@ -18,7 +18,7 @@ public class Carros {
 	}
 	
 	void imprimir() {
-		System.out.println("O carro " +nome+ "esta a uma velocidade de " +velocidade+ "KM/h");
+		System.out.println("O carro " +nome+ " esta a uma velocidade de " +velocidade+ "KM/h");
 	}
 
 }

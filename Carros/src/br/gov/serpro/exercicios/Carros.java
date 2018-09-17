@@ -2,7 +2,7 @@ package br.gov.serpro.exercicios;
 
 public class Carros {
 	int potencia;
-	int velocidade;
+	float velocidade;
 	String nome;
 	
 	void acelerar() {
@@ -13,7 +13,7 @@ public class Carros {
 		velocidade = velocidade / 2;
 	}
 	
-	int getVelocidade() {
+	float getVelocidade() {
 		return velocidade;
 	}
 	

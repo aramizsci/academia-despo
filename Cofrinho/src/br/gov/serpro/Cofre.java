@@ -9,6 +9,7 @@ public class Cofre {
 	int quantMoedasUmReal;
 	static int quantTotalMoedas = 0;
 	static double valorTotal = 0;
+	int maxMoedas = 10;
 	
 	public void contadorMoedas(Moeda moeda) {
 		quantTotalMoedas = quantTotalMoedas + 1;
@@ -28,11 +29,18 @@ public class Cofre {
 		}		
 	}
 	
-	public void depositaMoeda(double valor) {
-		valorTotal = valorTotal + valor;
+	public String depositaMoeda(Moeda moeda) {
+		if (quantTotalMoedas <= 10) {
+			valorTotal = valorTotal + moeda.valorMoeda;
+			contadorMoedas(moeda);			
+		} else {
+			return "O cofre não suporta mais moedas";
+		}
+		return "Deposito OK";
+
 	}
 	
-	public String moedaMaiorValor() {
+	public String moedaMaiorValor() {		
 		if (quantMoedasUmReal != 0) {
 			return "A maior moeda depositada é de: R$ 1.00";
 		}else if (quantMoedasCincoenta !=0) {

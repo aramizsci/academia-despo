@@ -3,9 +3,7 @@ package br.gov.serpro;
 public class Principal {
 
 	public static void main(String[] args) {
-		
-		Cofre meuCofre = new Cofre();
-		
+				
 		Moeda umReal = new Moeda();
 		umReal.valorMoeda = 1.00;
 		
@@ -24,7 +22,26 @@ public class Principal {
 		Moeda um = new Moeda();
 		um.valorMoeda = 0.01;	
 
+		Cofre meuCofre = new Cofre();
 		
+		meuCofre.depositaMoeda(umReal);
+		meuCofre.depositaMoeda(vinteCinco);
+		meuCofre.depositaMoeda(um);
+		meuCofre.depositaMoeda(cinco);
+		meuCofre.depositaMoeda(umReal);
+		meuCofre.depositaMoeda(vinteCinco);
+		meuCofre.depositaMoeda(cinco);
+		meuCofre.depositaMoeda(dez);
+		meuCofre.depositaMoeda(umReal);
+		meuCofre.depositaMoeda(vinteCinco);
+		meuCofre.depositaMoeda(umReal);
+		meuCofre.depositaMoeda(vinteCinco);
+		meuCofre.depositaMoeda(umReal);
+		meuCofre.depositaMoeda(vinteCinco);
+		
+		System.out.println(meuCofre.moedaMaiorValor());
+		System.out.println("O total depositado é de:  " +meuCofre.valorTotal);
+		System.out.println("Foram colocadas "+ meuCofre.getquantTotalMoedas()+" moedas no Cofre");
 	}
 
 }

@@ -3,6 +3,7 @@ package br.gov.serpro.exercicios;
 public class Principal {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		Carros uno = new Carros();
 		uno.potencia = 5;
 		uno.nome = "Uno";
@@ -24,6 +25,9 @@ public class Principal {
 				
 		
 				
+=======
+		// TODO Auto-generated method stub
+>>>>>>> branch 'master' of https://github.com/aramizsci/academia-despo
 		
 	}
 

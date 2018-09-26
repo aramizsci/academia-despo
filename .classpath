@@ -3,5 +3,10 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="CalculaImc/src"/>
 	<classpathentry kind="src" path="Carros/src"/>
+<<<<<<< HEAD
+=======
+	<classpathentry kind="src" path="EstaticoXInstancia/src"/>
+	<classpathentry kind="src" path="Pizzaria/src"/>
+>>>>>>> branch 'master' of https://github.com/aramizsci/academia-despo
 	<classpathentry kind="output" path="CalculaImc/bin"/>
 </classpath>
